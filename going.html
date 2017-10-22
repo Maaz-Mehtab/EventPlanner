@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="lib/boot.css">
+    <link rel="stylesheet" href="lib/style.css">
+
+
+
+
+
+    <!-- Bootstrap core CSS -->
+
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBtoeRGR4K51vMSiHIYhMtONm_C3M5qfb8",
+            authDomain: "eventplanner-22222.firebaseapp.com",
+            databaseURL: "https://eventplanner-22222.firebaseio.com",
+            projectId: "eventplanner-22222",
+            storageBucket: "",
+            messagingSenderId: "647980488916"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<nav class="navbar navbar-dark bg-dark justify-content-between mb-3">
+    <a class="navbar-brand text-white" id="userName"></a>
+    <form class="form-inline">
+        <button class="btn btn-outline-warning mr-1" onclick="location='home.html'" type="button">Create</button>
+        <button class="btn btn-outline-danger mr-1" onclick="location='going.html'" type="button">Going</button>
+        <button class="btn btn-outline-success mr-1" onclick="location='render.html'" type="button">Events</button>
+        <button class="btn btn-outline-primary ml-1" onclick="location='index.html'" type="button">Logout</button>
+    </form>
+</nav>
+
+
+
+<div class="row">
+
+    <div class="col-md-3">
+
+    </div>
+    <div class="col-md-6">
+        <div id="body"></div>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>
+</body>
+<script src="going.js">
+</script>
+<html>
